@@ -1,1 +1,16 @@
-####
+#import file
+a = []
+s = open("/share/data/day5/puzzle.txt")
+lines = s.readlines()
+for i in lines:
+  m = i.split()
+  a = a + m
+
+print a[0][0:15]
+
+#input the chunk you want to search for
+x = raw_input("enter chunk:  ")
+
+for i in range(len(lines)):
+  if lines[i][i:i+len(x)] == x:
+    print lines[i][0:15]

@@ -16,7 +16,7 @@ for i in range(len(lines)):
 #   print lines[i][0:15]
 for z in range(len(lista)-1):
     for zz in range(len(lista)-1):
-        if lista[z][12:15] == lista[zz][0:3]:
+        if lista[z][11:15] == lista[zz][0:4]:
             print lista[z],
             print lista[zz]
 #    if x in z:
